@@ -34,7 +34,7 @@ def intent_recognition(query):
     
     
     list_of_all_queries =data['Query of the Customer'].tolist()
-    
+    find_close_match = list()
     find_close_match = difflib.get_close_matches(query, list_of_all_queries)
     
     close_match = find_close_match[0]
