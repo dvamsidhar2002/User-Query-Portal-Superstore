@@ -16,7 +16,6 @@ from nltk.tokenize import RegexpTokenizer
 import streamlit as st
 
 def intent_recognition(query):
-
     data = pd.read_excel('Jobs.xlsx')
     
     tokenizer = RegexpTokenizer(r'\w+')
